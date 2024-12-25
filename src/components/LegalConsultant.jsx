@@ -1,11 +1,46 @@
 // src/App.jsx
 
+import PopComponent from "./PopComponent";
+
 function LegalConsultant() {
   return (
     <div className="flex flex-col min-h-screen bg-green-50">
-      {/* Header */}
-      <header className="bg-green-100 text-green-900 text-center py-8 px-4 sm:px-6 lg:px-8 shadow-md w-full">
+<header className="bg-green-100 text-green-900 py-8 px-4 sm:px-6 lg:px-8 shadow-md w-full">
+  <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center">
+    {/* Content Section */}
+    <div className="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+        Legal & Consultancy Customer Support
+      </h1>
+      <p className="mt-4 text-base sm:text-lg md:text-xl">
+        Expert advice and assistance for all your legal and consultancy needs.
+      </p>
+      <button
+        className="mt-6 bg-green-600 text-white py-2 px-6 rounded-md shadow-md 
+                   hover:bg-green-700 transition-colors duration-300"
+      >
+        Get Started
+      </button>
+    </div>
+
+    {/* Image Section */}
+    <div className="lg:w-1/2 flex justify-center">
+      <img
+        src="/LegalPage.jpg"
+        alt="Legal Support"
+        className="max-w-full h-auto rounded-lg shadow-lg"
+      />
+    </div>
+  </div>
+</header>
+
+
+      {/* <header className="bg-green-100 text-green-900 text-center py-8 px-4 sm:px-6 lg:px-8 shadow-md w-full">
         <div className="max-w-screen-xl mx-auto">
+          <img src="/LegalPage.jpg" alt="Legal support"
+          className="absolute inset-0 w-full h-full object-cover opacity-30 "
+          />
+          <div className="relative z-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             Legal & Consultancy Customer Support
           </h1>
@@ -13,10 +48,12 @@ function LegalConsultant() {
             Expert advice and assistance for all your legal and consultancy needs.
           </p>
         </div>
-      </header>
+        </div>
+      </header> */}
+      <PopComponent/>
 
       {/* Main Container */}
-      <div className="container mx-auto px-4 py-8 flex-grow">
+      <div className="container mx-auto px-4 py-8 flex-grow mt-10">
         {/* Immigration Services */}
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-green-800 mb-4">Immigration Services</h2>
